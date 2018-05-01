@@ -31,9 +31,8 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void robotInit() {
+		Solenoid aSolenoid = new Solenoid(0);
 	}
-	
-	Solenoid exampleSolenoid = new Solenoid(0);
 	/**
 	 * This function is run once each time the robot enters autonomous mode.
 	 */
@@ -62,6 +61,7 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void teleopInit() {
+		boolean triggerValue;
 	}
 
 	/**
@@ -70,6 +70,9 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 		m_robotDrive.arcadeDrive(m_stick.getY(), m_stick.getX());
+		
+		triggerValue = m_stick.getTrigger();
+		aSolenoid.set(triggerValue);
 	}
 
 	/**
