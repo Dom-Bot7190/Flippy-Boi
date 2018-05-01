@@ -46,6 +46,8 @@ public class Robot extends IterativeRobot {
 	/**
 	 * This function is called periodically during autonomous.
 	 */
+	Solenoid exampleSolenoid = new Solenoid(0);
+	
 	@Override
 	public void autonomousPeriodic() {
 		// Drive for 3 seconds
