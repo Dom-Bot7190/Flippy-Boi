@@ -25,7 +25,6 @@ public class Robot extends IterativeRobot {
 			= new DifferentialDrive(new Spark(0), new Spark(1));
 	private Joystick m_stick = new Joystick(0);
 	private Timer m_timer = new Timer();
-
 	/**
 	 * This function is run when the robot is first started up and should be
 	 * used for any initialization code.
@@ -33,7 +32,8 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void robotInit() {
 	}
-
+	
+	Solenoid exampleSolenoid = new Solenoid(0);
 	/**
 	 * This function is run once each time the robot enters autonomous mode.
 	 */
@@ -46,7 +46,6 @@ public class Robot extends IterativeRobot {
 	/**
 	 * This function is called periodically during autonomous.
 	 */
-	Solenoid exampleSolenoid = new Solenoid(0);
 	
 	@Override
 	public void autonomousPeriodic() {
