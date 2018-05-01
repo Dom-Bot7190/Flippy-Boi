@@ -1,2 +1,0 @@
-INDEX VERSION 1.130+C:\Users\domth\Documents\GitHub\Flippy-Boi\.metadata\.plugins\org.eclipse.jdt.core
-3565674710.index
