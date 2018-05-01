@@ -2165,3 +2165,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY riolog 1 0 2018-05-01 13:59:53.589
 !MESSAGE Connected to robot at 10.71.90.2
+
+!ENTRY riolog 1 0 2018-05-01 16:13:47.713
+!MESSAGE exiting listener
