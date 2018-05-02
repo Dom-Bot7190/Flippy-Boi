@@ -72,7 +72,7 @@ public class Robot extends IterativeRobot {
 		m_robotDrive.arcadeDrive(m_stick.getY(), m_stick.getX());
 		
 		triggerValue = m_stick.getTrigger();
-		aSolenoid.set(triggerValue);
+		aSolenoid.set(triggerValue); //Fire solenoid when trigger is pulled
 	}
 
 	/**
